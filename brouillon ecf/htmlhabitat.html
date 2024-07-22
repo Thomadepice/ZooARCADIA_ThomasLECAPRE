@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habitats - Zoo Fantastique</title>
+    <link rel="stylesheet" href="csshabitat.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="habitats.html">Habitats</a></li>
+                <li><a href="login.html">Connexion</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Nos Habitats</h1>
+        <section id="habitats">
+            <div class="habitat" onclick="showHabitatInfo('jungle')">
+                <img src="d:\Code html et css\test test\images tout\image_jungle.jpeg" alt="Jungle">
+                <h2>Jungle</h2>
+            </div>
+            <div class="habitat" onclick="showHabitatInfo('savane')">
+                <img src="d:\Code html et css\test test\images tout\images.jpeg" alt="Savane">
+                <h2>Savane</h2>
+            </div>
+            <div class="habitat" onclick="showHabitatInfo('marais')">
+                <img src="d:\Code html et css\test test\images tout\image_marais.jpeg" alt="Marais">
+                <h2>Marais</h2>
+            </div>
+        </section>
+        <section id="habitat-info">
+            <h2 id="habitat-name"></h2>
+            <p id="habitat-description"></p>
+            <ul id="habitat-animals"></ul>
+        </section>
+    </main>
+    <script src="habitatscript.js"></script>
+</body>
+</html>

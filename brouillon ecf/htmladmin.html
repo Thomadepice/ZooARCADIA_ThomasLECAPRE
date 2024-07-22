@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace Administrateur - Zoo Fantastique</title>
+    <link rel="stylesheet" href="cssconnexion.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="habitats.html">Habitats</a></li>
+                <li><a href="login.html">Connexion</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Espace Administrateur</h1>
+        <section>
+            <h2>Créer un compte</h2>
+            <form id="create-account-form" onsubmit="createAccount(event)">
+                <label for="account-email">Email:</label>
+                <input type="email" id="account-email" name="account-email" required><br>
+                <label for="account-password">Mot de passe:</label>
+                <input type="password" id="account-password" name="account-password" required><br>
+                <label for="account-role">Type de compte:</label>
+                <select id="account-role" name="account-role" required>
+                    <option value="employe">Employé</option>
+                    <option value="veterinaire">Vétérinaire</option>
+                </select><br>
+                <button type="submit">Créer le compte</button>
+            </form>
+        </section>
+        <section>
+            <h2>Modifier les services</h2>
+            <!-- Formulaire pour modifier les services -->
+        </section>
+        <section>
+            <h2>Modifier les habitats</h2>
+            <!-- Formulaire pour modifier les habitats -->
+        </section>
+        <section>
+            <h2>Liste des animaux</h2>
+            <!-- Formulaire pour modifier la liste des animaux -->
+        </section>
+        <section>
+            <h2>Tableau des notes des vétérinaires</h2>
+            <table id="notes-table">
+                <thead>
+                    <tr>
+                        <th>Date de la note</th>
+                        <th>Habitat</th>
+                        <th>Note</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Notes will be added dynamically -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="adminscript.js"></script>
+</body>
+</html>

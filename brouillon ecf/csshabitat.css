@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+    text-align: center;
+}
+
+#habitats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.habitat {
+    text-align: center;
+    cursor: pointer;
+    margin: 1em;
+    flex-basis: 30%;
+}
+
+.habitat img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#habitat-info {
+    display: none;
+    margin-top: 2em;
+    text-align: center;
+}
+
+#habitat-info h2, #habitat-info p, #habitat-info ul {
+    text-align: center;
+}
+
+#habitat-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 0.5em 0;
+    }
+
+    .habitat {
+        flex-basis: 100%;
+    }
+}
